@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="754.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.AppPrincipalController">
+   <left>
+      <ToolBar fx:id="BarraaHerramientas" orientation="VERTICAL" prefHeight="700.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+        <items>
+            <HBox prefHeight="108.0" prefWidth="286.0">
+               <children>
+                  <ImageView fx:id="imagenUsuario" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../fotoperfil.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="niknameUsuario" alignment="CENTER" prefHeight="120.0" prefWidth="177.0" text="NickName">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="bEditarPerfil" mnemonicParsing="false" onAction="#handleBEditarPerfil" prefHeight="60.0" prefWidth="300.0" text="Editar Perfil">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="10.0" prefWidth="10.0" />
+            <HBox prefHeight="90.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="bGastos" mnemonicParsing="false" onAction="#handleBGastos" prefHeight="90.0" prefWidth="200.0" text="Gastos">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bCrearGasto" mnemonicParsing="false" onAction="#handleBCrearGasto" prefHeight="90.0" prefWidth="100.0" text="+">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="bCategorias" mnemonicParsing="false" onAction="#handleBCategorias" prefHeight="90.0" prefWidth="300.0" text="Categorías">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="10.0" prefWidth="10.0" />
+            <Button fx:id="bTablaBarras" mnemonicParsing="false" onAction="#handleBTablasBarras" prefHeight="80.0" prefWidth="300.0">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../c6cbc8cf5ca3856bca8d5f28c0471fca-carro-de-grafico-de-barras.png.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bTablaQueso" layoutX="10.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleBTableQueso" prefHeight="80.0" prefWidth="300.0">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../6_icon-icons.com_68891.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="tablaLineas" layoutX="10.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleBTablaLineas" prefHeight="80.0" prefWidth="300.0">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../8e77dd6a09ce0f0a31bd7d077321dd7b-grafico-de-lineas-de-colores-en-crecimiento.png.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane prefHeight="10.0" prefWidth="10.0" />
+            <Button fx:id="bSalir" layoutX="10.0" layoutY="607.0" mnemonicParsing="false" onAction="#handleBSalir" prefHeight="72.0" prefWidth="260.0" text="Salir">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

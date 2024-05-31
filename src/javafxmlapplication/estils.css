@@ -1,0 +1,156 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 may 2024, 19:52:51
+    Author     : tonim
+*/
+
+/*
+* Disseny iniciar sesió
+*/
+#TítuloInicioSesión {  
+   -fx-font-weight: bold;
+}
+
+#Fondo{
+    -fx-background-color: #f5f5f5;
+}
+
+
+.button{
+    -fx-background-color: linear-gradient(to top right, #c7fff3, #a7ebdc);
+    -fx-border-color: #444444;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 2;
+}
+.button:hover{
+    -fx-border-color: #7dc1f5;
+}
+.button:focused{
+    -fx-border-color: #7dc1f5;
+}
+
+/*
+AppPrincipal
+*/
+#visibleButton{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+#visibleButton:pressed{
+    -fx-background-color: lightgrey;
+}
+#visibleButton1{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+#visibleButton1:pressed{
+    -fx-background-color: lightgrey;
+}
+#visibleButton2{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+#visibleButton2:pressed{
+    -fx-background-color: lightgrey;
+}
+
+
+#bSalir{
+    -fx-background-color: linear-gradient(to top right, #de7359, #ffc2b3);
+    -fx-border-color: #444444;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 2;  
+}
+
+#bSalir:hover{
+    -fx-border-color: #7dc1f5;
+}
+#bSalir:focused{
+    -fx-border-color: #7dc1f5;
+}
+#BarraaHerramientas{
+    -fx-background-color:  linear-gradient(to top, #e0fff6, #ffffff);
+}
+
+#categoriaColumn.column-header {
+    -fx-background-color:  linear-gradient(to top, #ffcf7d, #fce5bd); /* Fondo para título */
+}
+#categoriaColumn.cell:odd {
+    -fx-background-color:  #fffdcf; /* Fondo para filas impares */
+}
+#categoriaColumn.cell:even {
+    -fx-background-color: #fcf7bb;  /* Fondo para filas impares */
+}
+
+#gastosColumn.cell:odd {
+    -fx-background-color: #ffffff; /* Fondo para filas impares */
+}
+#gastosColumn.cell:even {
+    -fx-background-color: #efefef;  /* Fondo para filas impares */
+}
+
+#costeColumn.column-header {
+    -fx-background-color:  linear-gradient(to top, #4acfa5, #4ff0bd); /* Fondo para título */
+}
+#costeColumn.cell:odd {
+    -fx-background-color: #bbfcd9; /* Fondo para filas impares */
+}
+#costeColumn.cell:even {
+    -fx-background-color: #a6ffcf; /* Fondo para filas impares */
+}
+
+#categoriaColumn.cell:hover{
+    -fx-border-color: #7dc1f5;
+    -fx-background-color: #add6ff;
+    -fx-font-fill: #000000 ;
+}
+#categoriaColum.cell:focused{
+    -fx-border-color: #7dc1f5;
+    -fx-background-color: #add6ff;
+    -fx-font-fill: #000000 ; 
+}
+#gastosColumn.cell:hover{
+    -fx-border-color: #7dc1f5;
+    -fx-background-color: #add6ff;
+    -fx-font-fill: #000000 ;
+}
+#gastosColum.cell:focused{
+    -fx-border-color: #7dc1f5;
+    -fx-background-color: #add6ff;
+    -fx-font-fill: #000000 ; 
+}
+#costeColumn.cell:hover{
+    -fx-border-color: #7dc1f5;
+    -fx-background-color: #add6ff;
+    -fx-font-fill: #000000 ;
+}
+#costeColum.cell:focused{
+    -fx-border-color: #7dc1f5;
+    -fx-background-color: #add6ff;
+    -fx-font-fill: #000000 ; 
+}
+
+.table-row-cell:selected .text {
+       -fx-fill: red ;
+       -fx-font-weight: bold;
+}
+
+
+#bImprimir{
+    -fx-background-color: linear-gradient(to top right, #d6d6d6, #f5f5f5);
+    -fx-border-color: #444444;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 2;  
+}
+
+
+

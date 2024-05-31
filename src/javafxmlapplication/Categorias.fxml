@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.CategoriasController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="603.0" prefWidth="781.0">
+         <center>
+            <ListView fx:id="listaCategorias" prefHeight="576.0" prefWidth="672.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Label text="Categorías" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="52.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets right="20.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </top>
+         <right>
+            <ToolBar orientation="VERTICAL" prefHeight="582.0" prefWidth="110.0" BorderPane.alignment="CENTER">
+              <items>
+                  <VBox alignment="CENTER" prefHeight="311.0" prefWidth="102.0">
+                     <children>
+                        <Button fx:id="bInfoCategoríes" mnemonicParsing="false" onAction="#handleBInfoCategoríes" prefHeight="70.0" prefWidth="70.0" text="+ INFO" />
+                      <Button fx:id="bCrearCategoria" mnemonicParsing="false" onAction="#handleBCrearCategoria" prefHeight="70.0" prefWidth="70.0">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Suma.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="bBorarCategoria" mnemonicParsing="false" onAction="#handleBBorrarCategoria" prefHeight="70.0" prefWidth="70.0">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../b394f1c0280879beb70bc51813fe1f41-icono-de-trazo-de-color-de-papelera-de-reciclaje.png.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+              </items>
+            </ToolBar>
+         </right>
+      </BorderPane>
+   </children>
+</Pane>
